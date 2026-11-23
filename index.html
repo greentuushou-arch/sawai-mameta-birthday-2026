@@ -128,11 +128,15 @@ i{font-style:normal}
 .beans{margin:34px auto 0;max-width:520px}
 .beans__h{font-family:var(--round);font-weight:900;font-size:26px;line-height:1.5}
 .beans__h b{font-family:var(--num);font-weight:700;font-size:44px;color:var(--yl);margin:0 2px;line-height:1}
-.beans__grid{display:grid;grid-template-columns:repeat(25,1fr);gap:4px;margin-top:14px;padding:14px;background:#ffffff0d;border-radius:12px}
-.bean{aspect-ratio:3/4;border-radius:50%;background:radial-gradient(circle at 35% 30%,#e0a464,#b06a2e 70%);position:relative;opacity:.25;transform:scale(.6);transition:opacity .3s,transform .3s}
-.bean::after{content:"";position:absolute;left:46%;top:18%;bottom:18%;width:1.5px;background:#3a2214aa;border-radius:2px;transform:rotate(8deg)}
-.bean.on{opacity:1;transform:scale(1)}
-.beans__cap{margin-top:12px;font-size:16px;font-weight:700;color:#ffffffd9}
+.beans__grid{display:grid;grid-template-columns:repeat(17,1fr);gap:5px;margin:20px auto 0;max-width:500px}
+.beans__grid>span{aspect-ratio:1}
+.bean{display:block;width:100%;aspect-ratio:1;position:relative;opacity:0;transform:translate(var(--x),var(--y)) rotate(var(--r0)) scale(.5);
+  transition:transform .9s cubic-bezier(.2,1.3,.4,1),opacity .4s;transition-delay:var(--d)}
+.bean::before{content:"";position:absolute;inset:0 8%;border-radius:50%;background:radial-gradient(circle at 35% 28%,#f0b878,#c27a3a 55%,#8a4a1e);transform:rotate(var(--r));box-shadow:0 2px 0 #1d1009}
+.bean::after{content:"";position:absolute;left:48%;top:16%;bottom:16%;width:2px;margin-left:-1px;border-radius:2px;background:#3a2214;transform:rotate(var(--r)) translateX(1px) skewY(8deg)}
+.beans.go .bean{opacity:1;transform:none}
+.beans__cap{margin-top:20px;font-family:var(--round);font-weight:900;font-size:22px;line-height:1.6}
+.beans__cap em{font-style:normal;color:var(--yl)}
 
 .arrow{margin:34px auto 0;max-width:520px}
 .arrow p{font-family:var(--round);font-weight:900;font-size:26px;line-height:1.5}
@@ -246,8 +250,9 @@ i{font-style:normal}
   .tk--10 .off{font-size:96px}
   .tk--10 .tk__off .c{font-size:36px}
   .btn{font-size:19px}
-  .beans__grid{gap:3px;padding:10px}
+  .beans__grid{gap:2px}
   .beans__h{font-size:22px}.beans__h b{font-size:38px}
+  .beans__cap{font-size:19px}
   .arrow p{font-size:22px}
   .steps{gap:8px}
   .steps li{font-size:15px;padding:14px 4px 12px}
@@ -328,9 +333,8 @@ i{font-style:normal}
     </div>
 
     <div class="beans" id="beans">
-      <p class="beans__h">先着<b>500</b>名様 ＝ 豆<b>500</b>粒</p>
-      <div class="beans__grid" id="beans-grid" aria-hidden="true"></div>
-      <p class="beans__cap"><span class="nw">この500粒がなくなったら、</span><span class="nw">31%OFFはおしまい。</span></p>
+      <div class="beans__grid" id="beans-grid" role="img" aria-label="コーヒー豆で描いた500"></div>
+      <p class="beans__cap"><span class="nw">先着<em>500</em>名様だけの</span><span class="nw"><em>31%OFF</em>。</span><br><span class="nw">なくなり次第、終了です。</span></p>
     </div>
 
     <div class="arrow">
@@ -449,13 +453,20 @@ i{font-style:normal}
   }
   tick();
 
-  // ===== 500粒 =====
-  var g=$('beans-grid'),h='';for(var i=0;i<500;i++)h+='<i class="bean"></i>';g.innerHTML=h;
-  var beans=g.children,filled=false;
-  new IntersectionObserver(function(es,o){es.forEach(function(e){
-    if(!e.isIntersecting||filled)return;filled=true;o.disconnect();
-    var k=0;(function step(){for(var j=0;j<20&&k<500;j++,k++)beans[k].classList.add('on');if(k<500)requestAnimationFrame(step)})();
-  })},{threshold:.3}).observe(g);
+  // ===== 豆で描く「500」(5x7ドット×3桁、桁間1列) =====
+  var D5=['#####','#....','####.','....#','....#','#...#','.###.'],
+      D0=['.###.','#...#','#...#','#...#','#...#','#...#','.###.'];
+  var g=$('beans-grid'),h='';
+  for(var row=0;row<7;row++){
+    var line=D5[row]+'.'+D0[row]+'.'+D0[row];
+    for(var col=0;col<line.length;col++){
+      if(line[col]!=='#'){h+='<span></span>';continue}
+      var dx=(Math.random()*2-1)*260,dy=-160-Math.random()*260;
+      h+='<i class="bean" style="--x:'+dx.toFixed(0)+'px;--y:'+dy.toFixed(0)+'px;--r0:'+(Math.random()*360|0)+'deg;--r:'+(Math.random()*60-30|0)+'deg;--d:'+(col*.03+Math.random()*.25).toFixed(2)+'s"></i>';
+    }
+  }
+  g.innerHTML=h;
+  new IntersectionObserver(function(es,o){if(es[0].isIntersecting){$('beans').classList.add('go');o.disconnect()}},{threshold:.4}).observe(g);
 
   // ===== 下部バー =====
   var bar=$('bar'),fvc=document.querySelector('.fvc'),cpn=$('coupon');
