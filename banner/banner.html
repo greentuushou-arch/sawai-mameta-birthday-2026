@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>誘導バナー｜澤井珈琲 豆太の誕生日 11/30</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=M+PLUS+Rounded+1c:wght@800;900&family=Noto+Sans+JP:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{--yl:#ffd02e;--yl-l:#ffe680;--red:#e2372b;--br:#3a2214;--br-l:#a8693a;--cream:#fff8e6;
+  --round:"M PLUS Rounded 1c",sans-serif;--sans:"Noto Sans JP",sans-serif;--num:"Jost",sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:var(--yl)}
+i{font-style:normal}
+.bn{position:relative;overflow:hidden;background:var(--yl);color:var(--br);font-family:var(--sans);isolation:isolate}
+.burst{position:absolute;width:2400px;height:2400px;z-index:-1;
+  background:repeating-conic-gradient(from 0deg,#ffe36b 0 7.5deg,var(--yl) 7.5deg 15deg);
+  -webkit-mask:radial-gradient(circle,#000 10%,transparent 55%);mask:radial-gradient(circle,#000 10%,transparent 55%)}
+.garland{position:absolute;left:0;top:0;width:100%;z-index:1}
+.dots{position:absolute;inset:0;z-index:0;pointer-events:none}
+
+/* 豆太 */
+.who{position:absolute;z-index:2}
+.who .m{position:absolute;left:0;bottom:0;width:100%}
+.hat{position:absolute;transform:rotate(-12deg);transform-origin:50% 100%}
+.hat::before{content:"";position:absolute;inset:0;clip-path:polygon(50% 0,100% 100%,0 100%);
+  background:repeating-linear-gradient(-35deg,var(--red) 0 .16em,#fff .16em .3em)}
+.hat::after{content:"";position:absolute;left:50%;top:-.16em;width:.32em;height:.32em;margin-left:-.16em;border-radius:50%;background:var(--yl-l);box-shadow:0 0 0 .04em var(--br)}
+.bal{position:absolute;z-index:1}
+.cake{position:absolute;z-index:3}
+
+/* 文字 */
+.date{display:inline-flex;align-items:center;background:var(--br);color:#fff;border-radius:999px;line-height:1;white-space:nowrap}
+.date b{font-family:var(--num);font-weight:600;letter-spacing:-.01em}
+.date .w{display:inline-flex;align-items:center;justify-content:center;border-radius:50%;background:var(--yl);color:var(--br);font-weight:900}
+.date span{font-weight:900;letter-spacing:.06em;color:var(--yl)}
+.ttl{font-family:var(--round);font-weight:900;line-height:1.15;letter-spacing:.07em;white-space:nowrap}
+.ttl small{display:block;letter-spacing:.14em}
+.ttl em{font-style:normal;color:var(--red)}
+
+/* クーポン */
+.cp{position:relative;background:var(--red);color:#fff;text-align:center;white-space:nowrap}
+.lim{display:inline-flex;align-items:baseline;background:var(--yl);color:var(--br);font-weight:900;line-height:1.2;letter-spacing:.04em}
+.lim b{font-family:var(--num);font-weight:700;line-height:1}
+.row{display:flex;align-items:center;justify-content:center}
+.off{display:inline-flex;align-items:center;line-height:1;color:#fff}
+.off>b{font-family:var(--num);font-weight:600;font-size:1em;line-height:.8;letter-spacing:-.02em}
+.off__u{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:.04em;margin-left:.05em}
+.off__u i{display:block;line-height:.9}
+.off__u .p{font-family:var(--num);font-weight:600;font-size:.6em}
+.off__u .o{font-family:var(--num);font-weight:700;font-size:.4em;letter-spacing:.02em}
+.c{font-family:var(--round);font-weight:900;color:var(--yl);letter-spacing:.07em;line-height:1.1}
+.all{display:inline-block;background:#fff;color:var(--red);font-family:var(--round);font-weight:900;letter-spacing:.07em;line-height:1.3}
+.sub{font-weight:900;line-height:1.3}
+.sub b{font-family:var(--num);font-weight:700;color:var(--yl)}
+
+/* ===== 1600x900 ===== */
+.s900{width:1600px;height:900px}
+.s900 .burst{left:-1200px;top:-1200px;margin:0;transform:translate(470px,560px)}
+.s900 .garland{height:96px}
+.s900 .who{left:120px;bottom:-14px;width:460px;height:456px}
+.s900 .hat{font-size:80px;left:47%;top:-96px;width:104px;height:122px}
+.s900 .bal1{left:28px;top:150px;width:150px}
+.s900 .bal2{left:600px;top:130px;width:150px}
+.s900 .cake{left:540px;bottom:18px;width:180px}
+.s900 .col{position:absolute;left:740px;right:36px;top:92px;bottom:30px;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:space-between;text-align:center}
+.s900 .date{gap:14px;padding:10px 34px 10px 28px}
+.s900 .date b{font-size:60px}
+.s900 .date .w{width:40px;height:40px;font-size:22px}
+.s900 .date span{font-size:30px}
+.s900 .ttl small{font-size:36px}
+.s900 .ttl small{margin-top:10px}
+.s900 .ttl strong{display:block;font-size:80px;margin-top:2px}
+.s900 .cp{width:100%;border-radius:24px;padding:24px 20px 26px;box-shadow:0 0 0 6px var(--br)}
+.s900 .lim{gap:6px;font-size:40px;padding:4px 26px 6px;border-radius:10px}
+.s900 .lim b{font-size:74px}
+.s900 .row{gap:16px;margin-top:8px}
+.s900 .off{font-size:208px}
+.s900 .c{font-size:66px;text-align:left}
+.s900 .all{font-size:32px;padding:2px 16px;border-radius:8px;margin-top:10px}
+.s900 .sub{margin-top:16px;font-size:34px;border-top:3px dashed #ffffff99;padding-top:12px}
+.s900 .sub b{font-size:50px;margin:0 2px}
+
+/* ===== 1600x311 ===== */
+.s311{width:1600px;height:311px}
+.s311 .burst{left:-1200px;top:-1200px;transform:translate(260px,200px)}
+.s311 .garland{display:none}
+.s311 .who{left:88px;bottom:-10px;width:262px;height:260px}
+.s311 .hat{font-size:46px;left:46%;top:-56px;width:60px;height:70px}
+.s311 .bal1{left:14px;top:8px;width:84px}
+.s311 .bal2{left:352px;top:6px;width:84px}
+.s311 .cake{display:none}
+.s311 .col,.s1200 .col{display:contents}
+.s311 .head{position:absolute;left:432px;width:540px;top:0;bottom:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center}
+.s311 .date{gap:10px;padding:7px 24px 7px 20px}
+.s311 .date b{font-size:50px}
+.s311 .date .w{width:32px;height:32px;font-size:18px}
+.s311 .date span{font-size:24px}
+.s311 .ttl small{font-size:28px}
+.s311 .ttl strong{display:block;font-size:50px;letter-spacing:.04em;margin-top:2px}
+.s311 .cp{position:absolute;z-index:3;right:0;top:0;bottom:0;width:620px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 24px}
+.s311 .cp::before{content:"";position:absolute;left:-20px;top:0;bottom:0;width:22px;
+  background:radial-gradient(circle at 22px 13px,var(--red) 12px,transparent 12.5px);background-size:22px 26px}
+.s311 .lim{gap:4px;font-size:28px;padding:2px 20px 4px;border-radius:8px}
+.s311 .lim b{font-size:48px}
+.s311 .row{gap:12px;margin-top:4px}
+.s311 .off{font-size:124px}
+.s311 .c{font-size:40px;text-align:left}
+.s311 .all{font-size:22px;padding:1px 10px;border-radius:6px;margin-top:6px}
+.s311 .sub{margin-top:6px;font-size:24px}
+.s311 .sub b{font-size:34px;margin:0 2px}
+
+/* ===== 1200x1200 ===== */
+.s1200{width:1200px;height:1200px}
+.s1200 .burst{left:-1200px;top:-1200px;transform:translate(600px,520px)}
+.s1200 .garland{height:96px}
+.s1200 .head{position:absolute;left:0;right:0;top:96px;z-index:2;text-align:center}
+.s1200 .date{gap:14px;padding:10px 34px 10px 28px}
+.s1200 .date b{font-size:60px}
+.s1200 .date .w{width:40px;height:40px;font-size:22px}
+.s1200 .date span{font-size:30px}
+.s1200 .ttl{margin-top:12px}
+.s1200 .ttl small{font-size:38px}
+.s1200 .ttl strong{display:block;font-size:84px;margin-top:2px}
+.s1200 .who{left:50%;margin-left:-180px;top:448px;width:360px;height:357px}
+.s1200 .hat{font-size:66px;left:47%;top:-80px;width:86px;height:100px}
+.s1200 .bal1{left:150px;top:390px;width:150px}
+.s1200 .bal2{right:150px;top:380px;width:150px}
+.s1200 .cake{left:770px;top:640px;width:170px}
+.s1200 .cp{position:absolute;left:0;right:0;bottom:0;height:420px;padding:30px 40px 0;z-index:3}
+.s1200 .cp::before{content:"";position:absolute;left:0;right:0;top:-18px;height:20px;
+  background:radial-gradient(circle at 15px 20px,var(--red) 15px,transparent 15.5px);background-size:30px 20px}
+.s1200 .lim{gap:6px;font-size:40px;padding:4px 28px 6px;border-radius:10px}
+.s1200 .lim b{font-size:72px}
+.s1200 .row{gap:18px;margin-top:8px}
+.s1200 .off{font-size:196px}
+.s1200 .c{font-size:64px;text-align:left}
+.s1200 .all{font-size:28px;padding:2px 16px;border-radius:8px;margin-top:10px}
+.s1200 .sub{margin-top:18px;font-size:36px}
+.s1200 .sub b{font-size:52px;margin:0 2px}
+</style>
+</head>
+<body>
+<div class="bn" id="bn">
+  <div class="burst"></div>
+  <svg class="garland" id="garland" preserveAspectRatio="none"></svg>
+  <svg class="dots" id="dots"></svg>
+
+  <svg class="bal bal1" viewBox="0 0 120 200"><path d="M60 128 C62 150 52 165 60 198" fill="none" stroke="#3a2214" stroke-width="2"/><ellipse cx="60" cy="64" rx="50" ry="60" fill="#e2372b"/><ellipse cx="42" cy="40" rx="10" ry="16" fill="#fff" opacity=".35"/><path d="M54 122 L66 122 L60 132Z" fill="#b8241b"/><text x="60" y="88" text-anchor="middle" font-family="Jost" font-weight="700" font-size="58" fill="#fff" letter-spacing="-2">11</text></svg>
+  <svg class="bal bal2" viewBox="0 0 120 200"><path d="M60 128 C58 150 68 165 60 198" fill="none" stroke="#3a2214" stroke-width="2"/><ellipse cx="60" cy="64" rx="50" ry="60" fill="#3a2214"/><ellipse cx="42" cy="40" rx="10" ry="16" fill="#fff" opacity=".25"/><path d="M54 122 L66 122 L60 132Z" fill="#1d1009"/><text x="60" y="88" text-anchor="middle" font-family="Jost" font-weight="700" font-size="58" fill="#ffd02e" letter-spacing="-2">30</text></svg>
+
+  <div class="who"><span class="hat"></span><img class="m" src="../img/mameta.png" alt=""></div>
+
+  <svg class="cake" viewBox="0 0 140 130"><ellipse cx="70" cy="122" rx="66" ry="8" fill="#3a221433"/><rect x="14" y="70" width="112" height="50" rx="8" fill="#fff8e6" stroke="#3a2214" stroke-width="3"/><path d="M14 84 Q28 96 42 84 T70 84 T98 84 T126 84" fill="none" stroke="#e2372b" stroke-width="5" stroke-linecap="round"/><rect x="30" y="40" width="80" height="34" rx="7" fill="#a8693a" stroke="#3a2214" stroke-width="3"/><path d="M30 50 Q40 60 50 50 T70 50 T90 50 T110 50" fill="none" stroke="#fff8e6" stroke-width="5" stroke-linecap="round"/><circle cx="44" cy="102" r="6" fill="#e2372b"/><circle cx="70" cy="104" r="6" fill="#e2372b"/><circle cx="96" cy="102" r="6" fill="#e2372b"/><rect x="51" y="14" width="10" height="28" rx="3" fill="#e2372b" stroke="#3a2214" stroke-width="2"/><rect x="79" y="14" width="10" height="28" rx="3" fill="#ffd02e" stroke="#3a2214" stroke-width="2"/><path d="M56 2 C62 8 61 14 56 14 C51 14 50 8 56 2Z" fill="#f5b400"/><path d="M84 2 C90 8 89 14 84 14 C79 14 78 8 84 2Z" fill="#f5b400"/></svg>
+
+  <div class="col">
+    <div class="head">
+    <p class="date"><b>11/30</b><i class="w">月</i><span>1日かぎり</span></p>
+    <h1 class="ttl"><small>きょうは</small><strong><em>豆太</em>のおたんじょうび</strong></h1>
+    </div>
+    <div class="cp" id="cp">
+      <p class="lim">先着<b>500</b>名様</p>
+      <div class="row">
+        <span class="off"><b>31</b><span class="off__u"><i class="p">%</i><i class="o">OFF</i></span></span>
+        <div><p class="c">クーポン<br>プレゼント</p><p class="all">店内全品対象</p></div>
+      </div>
+      <p class="sub">先着<b>1000</b>名様に<b>10%OFF</b>クーポンも</p>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var s=(new URLSearchParams(location.search).get('s'))||'900';
+  var bn=document.getElementById('bn');bn.classList.add('s'+s);
+  var W={900:1600,311:1600,1200:1200}[s],H={900:900,311:311,1200:1200}[s];
+  // ガーランド
+  var g=document.getElementById('garland'),n=Math.round(W/80),cols=['#e2372b','#3a2214','#fff8e6','#a8693a'],h=s==='311'?0:96,o='';
+  g.setAttribute('viewBox','0 0 '+W+' '+h);
+  o+='<path d="M0 6 Q'+W/2+' 30 '+W+' 6" fill="none" stroke="#3a2214" stroke-width="3"/>';
+  for(var i=0;i<n;i++){var x=(i+.5)*W/n,y=6+24*(1-Math.pow((x-W/2)/(W/2),2));
+    o+='<path d="M'+(x-30)+' '+(y-2)+' L'+(x+30)+' '+(y-2)+' L'+x+' '+(y+56)+'Z" fill="'+cols[i%4]+'" stroke="#3a2214" stroke-width="2"/>';}
+  g.innerHTML=o;
+  // 紙吹雪(固定配置)
+  var d=document.getElementById('dots');d.setAttribute('viewBox','0 0 '+W+' '+H);var r=7,q='';
+  function rnd(){r=(r*9301+49297)%233280;return r/233280}
+  var pc=['#e2372b','#3a2214','#fff','#a8693a'];
+  for(var k=0;k<(s==='311'?40:90);k++){var x=rnd()*W,y=rnd()*H,c=pc[k%4],a=rnd()*180;
+    q+='<rect x="'+x+'" y="'+y+'" width="12" height="7" rx="2" fill="'+c+'" opacity=".75" transform="rotate('+a+' '+x+' '+y+')"/>';}
+  d.innerHTML=q;
+})();
+</script>
+</body>
+</html>
