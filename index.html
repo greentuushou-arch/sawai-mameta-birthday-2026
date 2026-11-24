@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>11/30は豆太の誕生日｜先着500名様 31%OFFクーポン｜澤井珈琲</title>
-<meta name="description" content="11月30日は澤井珈琲のキャラクター「豆太」の誕生日。サワイにちなんだ31%OFFクーポンを先着500名様に。獲得できなかった方にも10%OFFクーポンをご用意しました。1日限り。">
+<meta name="description" content="11月30日は澤井珈琲のキャラクター「豆太」の誕生日。サワイにちなんだ31%OFFクーポンを先着500名様に。獲得できなかった方にも先着1,000名様に10%OFFクーポン。どちらも店内全品対象。1日限り。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=M+PLUS+Rounded+1c:wght@800;900&family=Noto+Sans+JP:wght@500;700;900&display=swap" rel="stylesheet">
@@ -171,6 +171,59 @@ i{font-style:normal}
 .mi img{width:100%;aspect-ratio:1;object-fit:cover}
 .mi p{padding:10px 6px 12px;font-weight:900;font-size:16px;line-height:1.45;word-break:auto-phrase}
 
+
+/* ===== バースデーの飾り ===== */
+.garland{display:block;width:calc(100% + 32px);margin:-6px -16px 4px;height:auto}
+.garland text{font-family:var(--round);font-weight:900}
+.bunting{height:44px;margin:-56px -22px 22px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='44'%3E%3Cpath d='M0 3 Q75 15 150 3' stroke='%23ffffff99' stroke-width='2' fill='none'/%3E%3Cpath d='M8 6 L42 9 L25 40Z' fill='%23e2372b'/%3E%3Cpath d='M58 9 L92 9 L75 42Z' fill='%23ffd02e'/%3E%3Cpath d='M108 9 L142 6 L125 40Z' fill='%23fff8e6'/%3E%3C/svg%3E") repeat-x 0 0}
+.bunting--lt{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='44'%3E%3Cpath d='M0 3 Q75 15 150 3' stroke='%233a2214' stroke-width='2' fill='none'/%3E%3Cpath d='M8 6 L42 9 L25 40Z' fill='%23e2372b'/%3E%3Cpath d='M58 9 L92 9 L75 42Z' fill='%233a2214'/%3E%3Cpath d='M108 9 L142 6 L125 40Z' fill='%23ffffff'/%3E%3C/svg%3E")}
+.cake{position:absolute;left:3%;bottom:0;width:132px;z-index:1}
+.gift{position:absolute;right:4%;bottom:0;width:104px;z-index:1;animation:wob 3s ease-in-out infinite;transform-origin:50% 100%}
+@keyframes wob{0%,100%{transform:rotate(0)}50%{transform:rotate(4deg)}}
+.flame{transform-box:fill-box;transform-origin:50% 100%;animation:flk .5s ease-in-out infinite alternate}
+@keyframes flk{from{transform:scale(1,1)}to{transform:scale(.85,1.15)}}
+.tk__all{display:inline-block;margin-top:12px;font-family:var(--round);font-weight:900;font-size:24px;line-height:1.3;padding:6px 18px;border-radius:8px}
+.tk--31 .tk__all{background:#fff;color:var(--red)}
+.tk--10 .tk__all{background:var(--red);color:#fff}
+.tk--10 .tk__tag b{font-family:var(--num);font-weight:700;font-size:30px;line-height:1;margin:0 2px}
+.fvc__all{display:inline-block;margin-top:14px;background:#fff;color:var(--red);font-family:var(--round);font-weight:900;font-size:26px;line-height:1.3;padding:6px 22px;border-radius:8px}
+
+/* 図鑑カード */
+.zukan{position:relative;margin-top:26px;background:var(--paper);border:3px dashed var(--br-l);border-radius:20px;padding:24px 20px 20px;text-align:left}
+.zukan__top{display:grid;grid-template-columns:170px 1fr;gap:18px;align-items:center}
+.zukan__pic{position:relative;text-align:center}
+.zukan__pic img{width:150px;margin:28px auto 0;animation:hop 2.6s ease-in-out infinite}
+.zukan__pic .hat{left:50%;top:-10px;width:44px;height:52px;margin-left:-14px;z-index:2}
+.zukan__pic .hat::after{width:16px;height:16px;top:-8px;margin-left:-8px}
+.zukan__name{font-family:var(--round);font-weight:900;font-size:40px;line-height:1.2;color:var(--br)}
+.zukan__name small{font-size:18px;margin-left:6px;color:var(--br-m)}
+.zukan__say{display:inline-block;margin-top:10px;background:var(--red);color:#fff;font-family:var(--round);font-weight:900;font-size:18px;line-height:1.4;padding:6px 14px;border-radius:10px;position:relative}
+.zukan__say::before{content:"";position:absolute;left:-10px;top:50%;margin-top:-7px;border:7px solid transparent;border-right:10px solid var(--red);border-left:0}
+.zukan__d{margin-top:16px;font-size:17px;line-height:1.8}
+.taste{margin-top:16px;background:#f3e6d6;border-radius:14px;padding:14px 16px;display:grid;grid-template-columns:1fr 1fr;gap:10px 18px}
+.taste div{display:flex;align-items:center;gap:10px}
+.taste dt{flex:0 0 auto;background:var(--br);color:#fff;font-weight:900;font-size:15px;line-height:1;padding:6px 10px;border-radius:4px}
+.taste dd{display:flex;gap:3px}
+.taste dd i{width:16px;height:21px;border-radius:50%;background:radial-gradient(circle at 35% 28%,#e0a364,#8a4a1e);position:relative}
+.taste dd i::after{content:"";position:absolute;left:50%;top:15%;bottom:15%;width:2px;margin-left:-1px;border-radius:2px;background:#3a2214aa}
+.taste dd i.o{background:#3a22141f}.taste dd i.o::after{display:none}
+.taste .roast{grid-column:1/-1}
+.taste .roast dd{font-weight:900;font-size:16px;line-height:1.4}
+.zukan__src{margin-top:10px;text-align:right;font-size:14px;color:var(--br-m)}
+.h3{margin-top:44px;font-family:var(--round);font-weight:900;font-size:26px;line-height:1.4;word-break:auto-phrase}
+.h3+.lead{margin-top:6px}
+.friends{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px;align-items:stretch}
+.fr{background:var(--paper);border-radius:16px;padding:12px 8px 14px;position:relative;display:flex;flex-direction:column;align-items:center}
+.fr__say{position:relative;display:inline-block;background:#fff;border:3px solid var(--br);border-radius:12px;padding:6px 8px;font-family:var(--round);font-weight:900;font-size:16px;line-height:1.35}
+.fr__say::after{content:"";position:absolute;left:50%;bottom:-11px;margin-left:-8px;border:8px solid transparent;border-top:9px solid var(--br);border-bottom:0}
+.fr img{height:130px;width:auto;margin:auto auto 0;padding-top:16px;box-sizing:content-box}
+.fr figcaption{margin-top:8px;font-size:15px;line-height:1.5}
+.fr figcaption b{display:block;font-family:var(--round);font-weight:900;font-size:20px;color:var(--red)}
+.end__crew{display:flex;justify-content:center;align-items:flex-end;gap:4px;margin:0 auto}
+.end__crew img{height:110px;width:auto;margin:0}
+.end__crew .c{height:120px}
+.end__crew .big{height:150px}
+
 /* ===== 人気商品 ===== */
 .pop{background:var(--paper)}
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:28px}
@@ -201,7 +254,8 @@ i{font-style:normal}
 .end img{width:150px;margin:0 auto}
 .end p{margin-top:12px;font-family:var(--round);font-weight:900;font-size:28px;line-height:1.5}
 .end a{display:inline-flex;align-items:center;gap:10px;margin-top:22px;background:var(--paper);border:3px solid var(--br);border-radius:12px;padding:10px 20px;font-weight:900;font-size:16px}
-.end a img{height:30px;width:auto;margin:0}
+.end a{flex-wrap:wrap;justify-content:center;max-width:100%}
+.end a img{height:24px;width:auto;margin:0}
 
 /* ===== 下部バー ===== */
 .bar{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;justify-content:center;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:linear-gradient(transparent,#3a2214cc 30%);transform:translateY(120%);transition:transform .3s}
@@ -243,6 +297,7 @@ i{font-style:normal}
   .fvc__big .c{font-size:36px}
   .fvc__sub{font-size:18px}
   .sec{padding:52px 16px}
+  .bunting{margin:-52px -16px 18px}
   .h2{font-size:28px}
   .cd b{font-size:40px}
   .cd .sep{font-size:30px;padding-bottom:26px}
@@ -270,6 +325,27 @@ i{font-style:normal}
   .card--top .card__n{font-size:22px}
   .bar a{font-size:17px}
 }
+@media (max-width:480px){
+  .cake{width:92px;left:0}
+  .gift{width:74px;right:0}
+  .zukan{padding:20px 14px 16px}
+  .zukan__top{grid-template-columns:116px 1fr;gap:10px}
+  .zukan__pic img{width:108px}
+  .zukan__name{font-size:32px}
+  .zukan__name small{font-size:16px;display:block;margin:0}
+  .zukan__say{font-size:16px}
+  .taste{grid-template-columns:1fr;gap:10px}
+  .friends{gap:8px}
+  .fr{padding:10px 4px 12px}
+  .fr__say{font-size:15px;padding:5px 6px;border-width:2px;white-space:nowrap}
+  .fr img{height:100px}
+  .fr figcaption{font-size:14px}
+  .fr figcaption b{font-size:18px}
+  .h3{font-size:23px}
+  .tk__all{font-size:21px}
+  .fvc__all{font-size:22px}
+  .end__crew img{height:80px}.end__crew .c{height:88px}.end__crew .big{height:110px}
+}
 @media (max-width:370px){
   .fvc__big .off{font-size:120px}
   .fvc__big .c{font-size:32px}
@@ -288,7 +364,7 @@ i{font-style:normal}
   <p class="side__t">今日は<b>豆太</b>の<br>おたんじょうび</p>
 </aside>
 <aside class="side side--r">
-  <p class="side__t">先着<b>500</b>名様</p>
+  <p class="side__t">店内全品<br>先着<b>500</b>名様</p>
   <span class="off"><b>31</b><span class="off__u"><i class="p">%</i><i class="o">OFF</i></span></span>
   <a href="#coupon" class="js-cpn31">クーポンを獲得</a>
 </aside>
@@ -300,25 +376,30 @@ i{font-style:normal}
   <section class="fv" id="top">
     <div class="fv__burst" aria-hidden="true"></div>
     <canvas id="confetti" aria-hidden="true"></canvas>
+    <svg class="garland" id="garland" viewBox="0 0 640 112" aria-hidden="true"></svg>
     <p class="fv__date"><b>11/30</b><i class="w">月</i><span>1日かぎり</span></p>
     <h1 class="fv__hb"><small>きょうは</small><strong><em>豆太</em>の<span class="sp"></span>おたんじょうび</strong></h1>
 
     <div class="stage" aria-hidden="true">
       <svg class="bal bal--3" viewBox="0 0 120 200"><path d="M60 128 C62 150 52 165 60 198" fill="none" stroke="#3a2214" stroke-width="2"/><ellipse cx="60" cy="64" rx="50" ry="60" fill="#e2372b"/><ellipse cx="42" cy="40" rx="10" ry="16" fill="#fff" opacity=".35"/><path d="M54 122 L66 122 L60 132Z" fill="#b8241b"/><text x="60" y="88" text-anchor="middle" font-family="Jost" font-weight="700" font-size="72" fill="#fff">3</text></svg>
       <svg class="bal bal--1" viewBox="0 0 120 200"><path d="M60 128 C58 150 68 165 60 198" fill="none" stroke="#3a2214" stroke-width="2"/><ellipse cx="60" cy="64" rx="50" ry="60" fill="#3a2214"/><ellipse cx="42" cy="40" rx="10" ry="16" fill="#fff" opacity=".25"/><path d="M54 122 L66 122 L60 132Z" fill="#1d1009"/><text x="60" y="88" text-anchor="middle" font-family="Jost" font-weight="700" font-size="72" fill="#ffd02e">1</text></svg>
+      <svg class="cake" viewBox="0 0 140 130"><ellipse cx="70" cy="122" rx="66" ry="8" fill="#3a221433"/><rect x="14" y="70" width="112" height="50" rx="8" fill="#fff8e6" stroke="#3a2214" stroke-width="3"/><path d="M14 84 Q28 96 42 84 T70 84 T98 84 T126 84" fill="none" stroke="#e2372b" stroke-width="5" stroke-linecap="round"/><rect x="30" y="40" width="80" height="34" rx="7" fill="#a8693a" stroke="#3a2214" stroke-width="3"/><path d="M30 50 Q40 60 50 50 T70 50 T90 50 T110 50" fill="none" stroke="#fff8e6" stroke-width="5" stroke-linecap="round"/><circle cx="44" cy="102" r="6" fill="#e2372b"/><circle cx="70" cy="104" r="6" fill="#e2372b"/><circle cx="96" cy="102" r="6" fill="#e2372b"/><rect x="51" y="14" width="10" height="28" rx="3" fill="#e2372b" stroke="#3a2214" stroke-width="2"/><rect x="79" y="14" width="10" height="28" rx="3" fill="#ffd02e" stroke="#3a2214" stroke-width="2"/><path class="flame" d="M56 2 C62 8 61 14 56 14 C51 14 50 8 56 2Z" fill="#f5b400"/><path class="flame" style="animation-delay:-.25s" d="M84 2 C90 8 89 14 84 14 C79 14 78 8 84 2Z" fill="#f5b400"/></svg>
+      <svg class="gift" viewBox="0 0 110 110"><rect x="10" y="40" width="90" height="66" rx="6" fill="#e2372b" stroke="#3a2214" stroke-width="3"/><rect x="4" y="28" width="102" height="20" rx="5" fill="#e2372b" stroke="#3a2214" stroke-width="3"/><rect x="47" y="28" width="16" height="78" fill="#ffd02e" stroke="#3a2214" stroke-width="3"/><path d="M55 28 C40 4 22 14 34 26 Z M55 28 C70 4 88 14 76 26 Z" fill="#ffd02e" stroke="#3a2214" stroke-width="3"/></svg>
       <div class="mameta"><span class="hat"></span><img src="img/mameta.png" alt="" width="431" height="426"></div>
     </div>
 
     <div class="fvc">
       <p class="fvc__lim">先着<b>500</b>名様</p>
       <p class="fvc__big"><span class="off"><b>31</b><span class="off__u"><i class="p">%</i><i class="o">OFF</i></span></span><span class="c">クーポンプレゼント</span></p>
+      <p><span class="fvc__all">店内全品が対象</span></p>
       <p class="fvc__why"><span class="nw">サ<b>3</b>ワイ<b>1</b>の31。</span><span class="nw">澤井珈琲だから31%OFF。</span></p>
-      <p class="fvc__sub">間に合わなかった方にも<br><b>10%OFF</b>クーポンをご用意</p>
+      <p class="fvc__sub">間に合わなかった方にも<br><span class="nw">先着<b>1000</b>名様に</span><span class="nw"><b>10%OFF</b>クーポン</span></p>
     </div>
   </section>
 
   <!-- クーポン -->
   <section class="sec cpn" id="coupon">
+    <div class="bunting" aria-hidden="true"></div>
     <p class="eyebrow">バースデークーポン</p>
     <h2 class="h2">豆太から、<span class="nw">お祝いのおすそわけ</span></h2>
     <p class="status" id="status">11/30(月) 0:00 スタート</p>
@@ -332,6 +413,7 @@ i{font-style:normal}
     <div class="tk tk--31">
       <p class="tk__tag">先着<b>500</b>名様</p>
       <p class="tk__off"><span class="off"><b>31</b><span class="off__u"><i class="p">%</i><i class="o">OFF</i></span></span><span class="c">クーポン</span></p>
+      <p class="tk__all">店内全品対象</p>
       <p class="tk__note"><span class="nw">11/30(月) 0:00〜23:59</span>　<span class="nw">なくなり次第終了</span></p>
       <a class="btn btn--yl js-cpn31" href="#coupon"><span><b>31</b>%OFFクーポンを獲得</span></a>
     </div>
@@ -342,15 +424,16 @@ i{font-style:normal}
     </div>
 
     <div class="arrow">
-      <p><span class="nw">先に<em>2枚とも</em></span><span class="nw">獲得しておくと安心。</span></p>
+      <p><span class="nw">まずは先に<em>2枚とも</em></span><span class="nw">獲得してくださいね！</span></p>
     </div>
     <div class="tk tk--10">
-      <p class="tk__tag">もう1枚、こちらも</p>
+      <p class="tk__tag">先着<b>1000</b>名様</p>
       <p class="tk__off"><span class="off"><b>10</b><span class="off__u"><i class="p">%</i><i class="o">OFF</i></span></span><span class="c">クーポン</span></p>
-      <p class="tk__note">11/30(月) 0:00〜23:59</p>
+      <p class="tk__all">店内全品対象</p>
+      <p class="tk__note"><span class="nw">11/30(月) 0:00〜23:59</span>　<span class="nw">なくなり次第終了</span></p>
       <a class="btn btn--br js-cpn10" href="#coupon"><span><b>10</b>%OFFクーポンを獲得</span></a>
     </div>
-    <p class="both">購入画面では、使えるクーポンを選ぶだけ。<br>31%OFFが上限に達していても、<span class="nw">10%OFFでお得に買えます。</span></p>
+    <p class="both">購入画面では、使えるクーポンを選ぶだけ。<br>31%OFFが先に上限に達しても、<span class="nw">10%OFFでお得に買えます。</span></p>
 
     <ol class="steps">
       <li>クーポンを<br><b class="nw">2枚とも</b>獲得</li>
@@ -361,20 +444,43 @@ i{font-style:normal}
 
   <!-- 豆太 -->
   <section class="sec who" id="mameta">
-    <p class="eyebrow">主役の紹介</p>
+    <div class="bunting bunting--lt" aria-hidden="true"></div>
+    <p class="eyebrow">きょうの主役</p>
     <h2 class="h2">豆太って、だれ？</h2>
-    <div class="who__in">
-      <img src="img/mameta.png" alt="豆太のぬいぐるみ" width="431" height="426" loading="lazy">
-      <div>
-        <p>澤井珈琲の<strong class="nw">オリジナルキャラクター</strong>。まんまるの体に、<span class="nw">ちょこんと</span>のびた手足。</p>
-        <p>うしろを向くと、<strong>コーヒー豆</strong>の形をしています。</p>
+    <div class="zukan">
+      <div class="zukan__top">
+        <div class="zukan__pic"><span class="hat" aria-hidden="true"></span><img src="img/chara/mameta.png" alt="豆太のイラスト" width="183" height="204" loading="lazy"></div>
+        <div>
+          <p class="zukan__name">豆太<small>（まめた）</small></p>
+          <p class="zukan__say">きょうは、<span class="nw">ぼくの誕生日！</span></p>
+        </div>
       </div>
+      <p class="zukan__d">店長にイタズラするのが大好きな<span class="nw">珈琲豆。</span>逃げ足だけは早いよ！豆田くんとはいいコンビみたい。</p>
+      <dl class="taste" id="taste">
+        <div><dt>香り</dt><dd data-v="4"></dd></div>
+        <div><dt>コク</dt><dd data-v="4"></dd></div>
+        <div><dt>酸味</dt><dd data-v="2"></dd></div>
+        <div><dt>苦味</dt><dd data-v="3"></dd></div>
+        <div class="roast"><dt>焙煎具合</dt><dd>ミディアムハイロースト（中強煎り）</dd></div>
+      </dl>
+      <p class="zukan__src">澤井珈琲キャラクター事典より</p>
     </div>
     <dl class="prof">
       <div><dt>誕生日</dt><dd><b class="nw">11月30日</b></dd></div>
-      <div><dt>好きな味</dt><dd>コクと苦みのしっかりした深煎り。名前入りの「豆太のブレンド」があります</dd></div>
-      <div><dt>おすすめ</dt><dd>ミルクを入れてカフェオレに</dd></div>
+      <div><dt>好きなこと</dt><dd>店長にイタズラすること</dd></div>
+      <div><dt>得意なこと</dt><dd>逃げ足の速さ</dd></div>
+      <div><dt>相棒</dt><dd>豆田くん</dd></div>
     </dl>
+
+    <h3 class="h3">お祝いに、<span class="nw">仲間がかけつけました</span></h3>
+    <div class="friends">
+      <figure class="fr"><p class="fr__say">相棒、<br>おめでとう</p><img src="img/chara/mameda.png" alt="豆田" width="170" height="204" loading="lazy"><figcaption><b>豆田</b>イタズラ仲間の相棒。3兄弟の長男</figcaption></figure>
+      <figure class="fr"><p class="fr__say">お花を<br>どうぞ！</p><img src="img/chara/mameko.png" alt="豆子" width="157" height="206" loading="lazy"><figcaption><b>豆子</b>お花が好きな、澤井珈琲のアイドル</figcaption></figure>
+      <figure class="fr"><p class="fr__say">イタズラ<br>今日は許す</p><img src="img/chara/tencho.png" alt="店長" width="148" height="239" loading="lazy"><figcaption><b>店長</b>いつもイタズラされる澤井珈琲の店長</figcaption></figure>
+    </div>
+
+    <h3 class="h3">ぬいぐるみの豆太と、<span class="nw">豆太のブレンド</span></h3>
+    <p class="lead">ぬいぐるみの豆太も、うしろを向くとちゃんとコーヒー豆の形。</p>
     <div class="mame-items">
       <a class="mi" href="https://item.rakuten.co.jp/sawaicoffee-tea/dp-mtb80/"><img src="img/items/mame50.jpg" alt="" loading="lazy" width="600" height="600"><p>豆太のブレンド ドリップバッグ50袋</p></a>
       <a class="mi" href="https://item.rakuten.co.jp/sawaicoffee-tea/mailmtb400/"><img src="img/items/mame200.jpg" alt="" loading="lazy" width="600" height="600"><p>豆太のブレンド 200g</p></a>
@@ -384,6 +490,7 @@ i{font-style:normal}
 
   <!-- 人気商品 -->
   <section class="sec pop" id="popular">
+    <div class="bunting bunting--lt" aria-hidden="true"></div>
     <p class="eyebrow">クーポンで買いたい</p>
     <h2 class="h2">みんなが選ぶ、<span class="nw">澤井の定番</span></h2>
     <p class="lead">まとめ買いの日にぴったりの、人気の大容量セットを集めました。</p>
@@ -395,15 +502,16 @@ i{font-style:normal}
     <h3>ご注意</h3>
     <ul>
       <li>クーポンの獲得・利用期間は2026年11月30日(月) 0:00〜23:59です。</li>
-      <li>31%OFFクーポンは先着500名様限定です。上限に達し次第、獲得・ご利用いただけなくなります。10%OFFクーポンもあわせて獲得しておくことをおすすめします。</li>
+      <li>31%OFFクーポン・10%OFFクーポンとも店内全品が対象です。</li>
+      <li>31%OFFクーポンは先着500名様、10%OFFクーポンは先着1,000名様限定です。上限に達し次第、獲得・ご利用いただけなくなります。2枚とも先に獲得しておくことをおすすめします。</li>
       <li>クーポンのご利用条件・対象商品は、各クーポンの獲得ページでご確認ください。</li>
       <li>掲載の商品画像はイメージです。価格や在庫は各商品ページでご確認ください。</li>
     </ul>
   </section>
 
   <footer class="end">
-    <img src="img/mameta.png" alt="" width="431" height="426" loading="lazy">
-    <p>豆太といっしょに、<br>おいしい一杯を。</p>
+    <div class="end__crew" aria-hidden="true"><img src="img/chara/mameda.png" alt="" loading="lazy"><img class="c" src="img/chara/mameko.png" alt="" loading="lazy"><img class="big" src="img/chara/mameta.png" alt="" loading="lazy"><img class="c" src="img/chara/tencho.png" alt="" loading="lazy"></div>
+    <p>豆太、おたんじょうび<span class="nw">おめでとう！</span><br>みんなで、<span class="nw">おいしい一杯を。</span></p>
     <a href="https://www.rakuten.co.jp/sawaicoffee-tea/"><img src="img/logo.png" alt="澤井珈琲" width="150" height="30">のトップページへ</a>
   </footer>
 </div>
@@ -412,6 +520,24 @@ i{font-style:normal}
 
 <script>
 (function(){
+
+  // ===== FVの旗ガーランド「まめた おめでとう」 =====
+  (function(){
+    var g=document.getElementById('garland');if(!g)return;
+    var ch=['ま','め','た','','お','め','で','と','う'],n=ch.length,h='<path d="M0 8 Q320 64 640 8" fill="none" stroke="#3a2214" stroke-width="2.5"/>';
+    var cols=[['#e2372b','#fff'],['#3a2214','#ffd02e'],['#fff','#e2372b']],k=0;
+    for(var i=0;i<n;i++){
+      if(!ch[i])continue;
+      var x=36+i*(568/(n-1)),t=x/640,y=(1-t)*(1-t)*8+2*(1-t)*t*64+t*t*8,c=cols[k++%3];
+      h+='<g transform="translate('+x.toFixed(1)+','+(y-2).toFixed(1)+') rotate('+((t-.5)*-18).toFixed(1)+')"><path d="M-32 0 L32 0 L0 74Z" fill="'+c[0]+'" stroke="#3a2214" stroke-width="2"/><text x="0" y="34" text-anchor="middle" font-size="34" fill="'+c[1]+'">'+ch[i]+'</text></g>';
+    }
+    g.innerHTML=h;
+  })();
+  // ===== 味わいの豆メーター =====
+  document.querySelectorAll('#taste dd[data-v]').forEach(function(d){
+    var v=+d.getAttribute('data-v'),h='';for(var i=0;i<5;i++)h+='<i'+(i<v?'':' class="o"')+'></i>';
+    d.innerHTML=h;d.setAttribute('aria-label','5段階中'+v);
+  });
   // ===== クーポンURL(届いたら差し込む) =====
   var COUPON31_URL='';
   var COUPON10_URL='';
