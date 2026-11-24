@@ -78,9 +78,9 @@ i{font-style:normal}
   background:radial-gradient(circle at 12px 20px,var(--red) 12px,transparent 12.5px);background-size:24px 20px}
 .fvc__lim{display:inline-flex;align-items:baseline;gap:6px;background:var(--yl);color:var(--br);font-weight:900;padding:4px 22px 6px;border-radius:6px;line-height:1.3;font-size:26px;letter-spacing:.04em}
 .fvc__lim b{font-family:var(--num);font-weight:700;font-size:46px;line-height:1}
-.fvc__big{margin-top:14px;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap}
+.fvc__big{margin-top:16px;display:flex;flex-direction:column;align-items:center;gap:12px}
 .fvc__big .off{font-size:168px;color:#fff}
-.fvc__big .c{font-family:var(--round);font-weight:900;font-size:48px;line-height:1.1;color:var(--yl);text-align:left}
+.fvc__big .c{font-family:var(--round);font-weight:900;font-size:54px;line-height:1.1;color:var(--yl);white-space:nowrap;letter-spacing:.02em}
 .fvc__why{margin-top:14px;font-weight:700;font-size:18px;line-height:1.7}
 .fvc__why b{font-family:var(--num);font-weight:700;font-size:28px;color:var(--yl);margin:0 2px}
 .fvc__sub{display:block;margin:18px auto 0;max-width:470px;border:2px dashed #ffffffaa;border-radius:12px;padding:12px 14px;font-weight:900;font-size:20px;line-height:1.6}
@@ -117,9 +117,9 @@ i{font-style:normal}
 .tk--31{background:var(--red);color:#fff;box-shadow:0 0 0 4px var(--yl) inset}
 .tk--31 .tk__tag{background:var(--yl);color:var(--br)}
 .tk--31 .tk__tag b{font-family:var(--num);font-weight:700;font-size:30px;line-height:1;margin:0 2px}
-.tk__off{margin-top:10px;display:flex;align-items:center;justify-content:center;gap:10px}
+.tk__off{margin-top:12px;display:flex;flex-direction:column;align-items:center;gap:10px}
 .tk--31 .off{font-size:150px}
-.tk__off .c{font-family:var(--round);font-weight:900;font-size:52px;line-height:1.1;text-align:left}
+.tk__off .c{font-family:var(--round);font-weight:900;font-size:48px;line-height:1.1;letter-spacing:.06em}
 .tk--31 .tk__off .c{color:var(--yl)}
 .tk__note{margin-top:8px;font-size:16px;font-weight:700}
 .tk--31 .btn{max-width:420px;margin-top:18px}
@@ -238,16 +238,15 @@ i{font-style:normal}
   .bal{width:92px}
   .bal--3{left:0}.bal--1{right:0}
   .fvc__lim{font-size:21px}.fvc__lim b{font-size:38px}
-  .fvc__big{gap:4px 10px}
+  .fvc__big{gap:10px}
   .fvc__big .off{font-size:132px}
-  .fvc__big .c{font-size:44px}
+  .fvc__big .c{font-size:36px}
   .fvc__sub{font-size:18px}
   .sec{padding:52px 16px}
   .h2{font-size:28px}
   .cd b{font-size:40px}
   .cd .sep{font-size:30px;padding-bottom:26px}
   .tk--31 .off{font-size:118px}
-  .tk__off{flex-wrap:wrap;gap:0 8px}
   .tk__off .c{font-size:40px}
   .tk--10 .off{font-size:96px}
   .tk--10 .tk__off .c{font-size:36px}
@@ -273,6 +272,9 @@ i{font-style:normal}
 }
 @media (max-width:370px){
   .fvc__big .off{font-size:120px}
+  .fvc__big .c{font-size:32px}
+  .status{font-size:19px;padding:6px 16px}
+  .btn{font-size:17px;letter-spacing:0;padding:16px 14px}
   .tk--31 .off{font-size:108px}
   .fv__hb strong{font-size:44px}
 }
@@ -309,7 +311,7 @@ i{font-style:normal}
 
     <div class="fvc">
       <p class="fvc__lim">先着<b>500</b>名様</p>
-      <p class="fvc__big"><span class="off"><b>31</b><span class="off__u"><i class="p">%</i><i class="o">OFF</i></span></span><span class="c">クーポン<br>プレゼント</span></p>
+      <p class="fvc__big"><span class="off"><b>31</b><span class="off__u"><i class="p">%</i><i class="o">OFF</i></span></span><span class="c">クーポンプレゼント</span></p>
       <p class="fvc__why"><span class="nw">サ<b>3</b>ワイ<b>1</b>の31。</span><span class="nw">澤井珈琲だから31%OFF。</span></p>
       <p class="fvc__sub">間に合わなかった方にも<br><b>10%OFF</b>クーポンをご用意</p>
     </div>
